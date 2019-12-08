@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="table">
+    <span class="tableImg"></span>
+    <div id="field" class="field">
+        <svg id="svg">
+            <defs>
+                <filter id="shadow" width="200%" height="200%">
+                    <feOffset result="offOut" in="SourceAlpha" dx="5" dy="2"></feOffset>>
+                    <feGaussianBlur result="blurOut" in="offOut" stdDeviation="3"></feGaussianBlur>
+                    <feBlend in="SourceGraphic" in2="blurOut" mode="normal"></feBlend>
+                </filter>
+            </defs>
+            <radialGradient id="gradientRed" cx="50%" cy="40%" r="50%" fx="70%" fy="40%">
+                <stop offset="0%" style="stop-color:white;" ></stop>
+                <stop offset="100%" style="stop-color:red;" ></stop>
+            </radialGradient>
+            <radialGradient id="gradientOrange" cx="50%" cy="40%" r="50%" fx="70%" fy="40%">
+                <stop offset="0%" style="stop-color:white;" ></stop>
+                <stop offset="100%" style="stop-color:orange;" ></stop>
+            </radialGradient>
+            <radialGradient id="gradientYellow" cx="50%" cy="40%" r="50%" fx="70%" fy="40%">
+                <stop offset="0%" style="stop-color:white;" ></stop>
+                <stop offset="100%" style="stop-color:yellow;" ></stop>
+            </radialGradient>
+            <radialGradient id="gradientGreen" cx="50%" cy="40%" r="50%" fx="70%" fy="40%">
+                <stop offset="0%" style="stop-color:white;" ></stop>
+                <stop offset="100%" style="stop-color:green;" ></stop>
+            </radialGradient>
+            <radialGradient id="gradientBlue" cx="50%" cy="40%" r="50%" fx="70%" fy="40%">
+                <stop offset="0%" style="stop-color:white;" ></stop>
+                <stop offset="100%" style="stop-color:#7ec4fd;" ></stop>
+            </radialGradient>
+            <radialGradient id="gradientDarkBlue" cx="50%" cy="40%" r="50%" fx="70%" fy="40%">
+                <stop offset="0%" style="stop-color:white;" ></stop>
+                <stop offset="100%" style="stop-color:blue;" ></stop>
+            </radialGradient>
+            <radialGradient id="gradientViolet" cx="50%" cy="40%" r="50%" fx="70%" fy="40%">
+                <stop offset="0%" style="stop-color:white;" ></stop>
+                <stop offset="100%" style="stop-color:blueviolet;" ></stop>
+            </radialGradient>
+           <!-- <circle id="circle" cx="855" cy="333" r="25" style="filter:url(#shadow);" fill="url(#gradientRed)"/> -->
+            <!--<circle id="circle1" cx="855" cy="333" r="25" style="filter:url(#shadow);" fill="url(#gradientRed)"/>-->
+        </svg>
+
+    </div>
+</div>
+
+</body>
+<script src="js/model.js"></script>
+<script src="js/logic.js"></script>
+<script src="js/controller.js"></script>
+</html>
