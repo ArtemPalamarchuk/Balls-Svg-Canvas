@@ -23,8 +23,8 @@ function cloneBalls(e) {
     e.stopPropagation()
     for (let j = 0; j < 3; j++) {
         newBall = createBall();
-        newBall.dx = (e.clientX - x1  - randomInteger(-100, 100));
-        newBall.dy = (e.clientY - y1  - randomInteger(-100, 100));
+        newBall.dx = (e.clientX - x1/*  - randomInteger(-100, 100)|*/);
+        newBall.dy = (e.clientY - y1/*  - randomInteger(-100, 100)*/);
         newBall.setAttribute( 'cx', + (e.clientX - x1)  + "" );
         newBall.setAttribute('cy', + (e.clientY - y1) + "");
     }
